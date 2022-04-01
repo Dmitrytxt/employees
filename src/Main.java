@@ -52,7 +52,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter employee name:");
         String name = scanner.nextLine();
-        employees.removeIf(employee -> Objects.equals(employee.getName(), name));
+        employees.removeIf(employee -> Objects.equals(employee.name(), name));
     }
 
     private static void saveData() {
